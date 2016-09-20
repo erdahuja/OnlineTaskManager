@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task Manager App</title>
+    <script src="js/task.js">
+
+
+    </script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="js/model.js"></script>
+    <script src="js/controller.js"></script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td> Task Name : </td>
+            <td>Task Description : </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" placeholder="type task name" id="taskName"> </td>
+            <td>
+                <textarea rows="4" cols="50" placeholder="type task desc" id="taskDesc"> </textarea>
+            </td>
+        </tr>
+    </table>
+    <td colspan="2">
+        <button id="AddBtn">ADD</button>
+        <button id="DelBtn">Delete</button>
+        <button id="SearchBtn">Search</button>
+        <button>Sort</button>
+        <button>Save</button>
+        <button>Load</button>
+    </td>
+    <div id="searchBox">
+        <h1>Search</h1>
+        <input type="text" id="searchTask" placeholder="Type TaskName to Search"> </div>
+    <h1>Pending Count <span id="pending"></span> Completed Count <span id="completed"></span></h1>
+    <fieldset>
+        <legend>Task List</legend>
+        <ul id="taskList"></ul>
+    </fieldset>
+</body>
+
+</html>

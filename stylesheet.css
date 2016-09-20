@@ -1,0 +1,8 @@
+.completed {
+    color: red;
+    font-style: italic;
+}
+.pending {
+    color: green;
+    font-style: oblique;
+}
